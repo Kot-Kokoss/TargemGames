@@ -6,7 +6,7 @@ const Player = sequelize.define(
   {
     id: {
       type: DataTypes.UUID,
-      defaultValue: Sequelize.UUIDV4,
+      defaultValue: DataTypes.UUIDV4,
       primaryKey: true,
       allowNull: false,
     },
@@ -33,3 +33,7 @@ const Player = sequelize.define(
     timestamps: false,
   },
 );
+
+module.exports = {
+  Player,
+};
