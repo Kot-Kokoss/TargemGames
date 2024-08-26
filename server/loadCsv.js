@@ -44,7 +44,7 @@ const loadCSVToPostgres = async (filePath) => {
         const date = new Date(year, month - 1, day, hours, minutes);
         console.log(date);
 
-        const registrationDate = Math.floor(date.getTime() / 1000); // Задаем дату в Unix time
+        const registrationDate = Math.floor(date.getTime() / 1000);
         console.log(
           `Вставляем данные: nickName=${row.nickName}, email=${row.email}, registrationDate=${registrationDate}, status=${row.status}`,
         );
