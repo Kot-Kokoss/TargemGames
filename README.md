@@ -36,7 +36,7 @@ npm install
 # Запустить server
 npm run dev
 ```
-### Для запуска сервера
+### Для запуска клиента
 ```bash
 # Перейти в директорию client
 cd client
